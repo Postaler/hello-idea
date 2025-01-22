@@ -1,19 +1,27 @@
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.print("Hello and welcome! Idea!!");
+       Scanner scanner = new Scanner(System.in);
+        System.out.print("What is ur fav num?");
+        //String name = scanner.nextLine();
+       int number = 0;
 
-            for (int i = 1; i <= 5; i++){
+        try{
+             number = scanner.nextInt();
 
 
-            System.out.println("i = " + i);
+        }catch(Exception e){
+            System.out.print(number + " is not a num");
+            System.exit(0);
         }
 
-    }
-}
+        System.out.print("Cool! I like that fav num is  " + number);
+
+
+
+     } // end constructor
+
+} // end Main
 
 
